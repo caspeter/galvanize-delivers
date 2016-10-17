@@ -9,7 +9,10 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
 
-    <!-- Compiled and minified JavaScript -->
+    <!-- Compiled and minified JQuery -->
+  <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+
+  <!-- JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
 
     <!--Let browser know website is optimized for mobile-->
@@ -18,16 +21,32 @@
     <!-- For the icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JAVASCRIPT  -->
+    <script src="js/script.js" charset="utf-8" defer></script>
+
 </head>
 
 <body>
 <!-- navagation -->
-    <nav>
-        <div class="nav-wrapper #1565c0 blue darken-3">
-            <a href="#" class="brand-logo">Galvanize Delivers</a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="sass.html">Order Delivery</a></li>
+    <nav class="blue darken-3">
+        <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo">Galvanize Delivers</a>
+            <ul class="right hide-on-med-and-down">
+                <li>
+                  <a href="order.html">Order Delivery</a>
+                </li>
             </ul>
+
+            <ul id="nav-mobile" class="side-nav">
+              <li>
+                <a href="order.html">Order Delivery</a>
+              </li>
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse">
+              <i class="material-icons">menu</i>
+            </a>
         </div>
     </nav>
 
@@ -36,7 +55,7 @@
         <div class="section no-pad-bot">
             <div class="container">
               <br><br><br><br>
-                <h1 class="header center white-text">Fine Dining, Delivered.</h1>
+                <h1 class="header center white-text 600-text">Fine Dining, Delivered.</h1>
             <div class="row center">
               <a href = "#" id="download-button" class="btn-large waves-effect waves-light pink lighten-1">PLACE AN ORDER</a>
             </div>
@@ -51,20 +70,20 @@
     <div class="container">
       <div class="section">
         <div class="row">
-          <div class="col s4">
+          <div class="col m4 s12">
             <h4 class="pink-text section">
               <i class="material-icons small">shopping_basket</i>
               Shop Online
             </h4>
             <p>Using our convenient web app, you'll get all the power of gFood without having to call your order in. Order in your pajamas, order 24 hours a day, order on Christmas, we're here to serve you.</p>
           </div>
-          <div class="col s4">
+          <div class="col m4 s12">
             <h4 class="pink-text section">
               <i class="material-icons small center ">local_shipping</i> Fast Delivery
             </h4>
             <p>You've never seen ordering this quick. Our proprietary ordering rocket ship delivery team allows you to spend less time being hungry, and more time doing what matters most to you. We'd ask what that is, but gFood respects your privacy.</p>
           </div>
-          <div class="col s4">
+          <div class="col m4 s12">
             <h4 class="pink-text section">
               <i class="material-icons small center ">local_atm</i>
               Great Deals
@@ -85,8 +104,8 @@
                 </div>
                 <div class="col l4 offset-l2 s12">
                     <ul>
-                        <li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Order Delivery</a></li>
+                        <li><a class="grey-text text-lighten-3" href="index.html">Home</a></li>
+                        <li><a class="grey-text text-lighten-3" href="order.html">Order Delivery</a></li>
                     </ul>
                 </div>
             </div>
