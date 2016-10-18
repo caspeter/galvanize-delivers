@@ -62,62 +62,78 @@
                         <h3>Menu</h3>
                         <div class="col s12 m6">
                             <div class="card">
-                                <div class="card-image">
-                                    <img src="img/burger.jpg">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="activator" src="img/burger.jpg">
                                 </div>
-                                <div class="card-content">
+                                <div class="card-content activator">
                                     <h6>Royale with Cheese</h6>
                                     <p>$8.99</p>
                                 </div>
                                 <div class="card-action">
-                                    <a href="#" class="pink-text">Add to Order</a>
+                                    <a href="#" id="royaleCheese" class="pink-text">Add to Order</a>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">Royale with Cheese <i class="material-icons right">close</i></span>
+                                    <p>This is a burger.</p>
                                 </div>
                             </div>
                             <!-- img 2 -->
                         </div>
                         <div class="col s12 m6">
                             <div class="card">
-                                <div class="card-image">
-                                    <img src="img/pizza.jpg">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="activator" src="img/pizza.jpg">
                                 </div>
-                                <div class="card-content">
-                                    <h6>Arugla Pie</h6>
+                                <div class="card-content activator">
+                                    <h6>Arugula Pie</h6>
                                     <p>$11.99</p>
                                 </div>
                                 <div class="card-action">
-                                    <a href="#" class="pink-text">Add to Order</a>
+                                    <a href="#" id="arugulaPie" class="pink-text">Add to Order</a>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">Royale with Cheese <i class="material-icons right">close</i></span>
+                                    <p>This is a pizza.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- img 3 -->
                     <div class="row">
-                        <!-- img 3 -->
                         <div class="col s12 m6">
                             <div class="card">
-                                <div class="card-image">
-                                    <img src="img/ribs.jpg">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="activator" src="img/ribs.jpg">
                                 </div>
-                                <div class="card-content">
+                                <div class="card-content activator">
                                     <h6>Smoked Swine</h6>
                                     <p>$14.99</p>
                                 </div>
                                 <div class="card-action">
-                                    <a href="#" class="pink-text">Add to Order</a>
+                                    <a href="#" id="smokedSwine" class="pink-text">Add to Order</a>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">Smoked Swine <i class="material-icons right">close</i></span>
+                                    <p>This is a pork ribs.</p>
                                 </div>
                             </div>
                             <!-- img 4 -->
                         </div>
                         <div class="col s12 m6">
                             <div class="card">
-                                <div class="card-image">
-                                    <img src="img/ice_cream.jpg">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="activator" src="img/ice_cream.jpg">
                                 </div>
-                                <div class="card-content">
+                                <div class="card-content activator">
                                     <h6>Ice Cream Biscut</h6>
                                     <p>$7.99</p>
                                 </div>
                                 <div class="card-action">
-                                    <a href="#" class="pink-text">Add to Order</a>
+                                    <a href="#" id="iceCream" class="pink-text">Add to Order</a>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">Ice Cream Biscut <i class="material-icons right">close</i></span>
+                                    <p>This is a ice cream.</p>
                                 </div>
                             </div>
                         </div>
@@ -127,7 +143,7 @@
                 <!-- order form  -->
                 <div class="col s12 m12 l6">
                     <h3>Order</h3>
-                    <table class="striped responsive-table">
+                    <table class="striped">
                         <thead>
                             <tr>
                                 <th data-field="item">Item</th>
@@ -135,60 +151,45 @@
                             </tr>
                         </thead>
 
-                        <tbody>
-                            <tr>
-                                <td>Royale with Cheese</td>
-                                <td class="right-align">$8.99</td>
-                            </tr>
-                            <tr>
-                                <td>Arugula Pie</td>
-                                <td class="right-align">$11.99</td>
-                            </tr>
-                            <tr>
-                                <td>Smoked Swine</td>
-                                <td class="right-align">$14.99</td>
-                            </tr>
-                            <tr>
-                                <td>Ice Cream Biscut</td>
-                                <td class="right-align">$7.99</td>
-                            </tr>
+                        <tbody id="table">
+
                         </tbody>
                     </table>
                     <table>
                         <tbody>
                             <tr>
                                 <td class="right-align">Subtotal</td>
-                                <td class="right-align">$43.96</td>
+                                <td id="subtotal" class="right-align">$0.00</td>
                             </tr>
                             <tr>
                                 <td class="right-align">Tax</td>
-                                <td class="right-align">$4.40</td>
+                                <td id="tax" class="right-align">$0.00</td>
                             </tr>
                             <tr>
                                 <td class="right-align">Total</td>
-                                <td class="right-align">$48.36</td>
+                                <td id="total" class="right-align">$0.00</td>
                             </tr>
                         </tbody>
                     </table>
                     <!-- contact information -->
                     <div class="row">
-                        <form class="col s12">
+                        <form class="col s12 m12 l12">
                             <div class="row">
-                                <div class="input-field col l12">
+                                <div class="input-field col s12">
                                     <i class="material-icons small pink-text prefix">account_circle</i>
                                     <input id="name" type="text" class="validate">
                                     <label for="name">Name</label>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="input-field col l12">
+                                <div class="input-field col s12">
                                     <i class="material-icons small pink-text prefix">call</i>
                                     <input id="phone_number" type="text" class="validate">
-                                    <label for="phone_number">Last Name</label>
+                                    <label for="phone_number">Phone Number</label>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="input-field col l12">
+                                <div class="input-field col s12">
                                     <i class="material-icons small pink-text prefix">business</i>
                                     <input id="address" type="text" class="validate">
                                     <label for="address">Address</label>
@@ -197,7 +198,7 @@
                         </form>
                         <row class="center">
                             <div col l12>
-                                <a class="waves-effect waves-light btn-large  pink center">PLACE ORDER</a>
+                                <a id="placeOrder" class="waves-effect waves-light btn-large  pink center">PLACE ORDER</a>
                             </div>
                         </row>
                     </div>
